@@ -82,40 +82,34 @@ function login() {
  <?php require_once 'topBanner.php'; ?>
  <div class="outer">
   <div class='loginDiv'>
-    <h3 class="blue"><u>Welcome To LCM, please login.</u></h3>
+    <h3 class="blue">Welcome To LCM</h3>
     <table class='login'>
       <tr>
         <td>
-          User Name:
-        </td>
-        <td>
-          <input type="text" class="username lnField" />
+          <input type="text" class="username lnField" placeholder="Username" />
         </td>
         <td class="warning">
-          Enter your User Name.
+          Please enter your username
         </td>
       </tr>
       <tr>
         <td>
-          Password:
-        </td>
-        <td>
-          <input type="password" class="password lnField" />
+          <input type="password" class="password lnField" placeholder="Password" />
         </td>
         <td class="warning">
-          Enter your password.
+          Please enter your password
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button class="loginSubmit">Login</button>
+          <div class="response"></div>
         </td>
       </tr>
     </table>
-    <div class='buttonRow'>
-      <span class="response"></span>
-      <button class="buttons blueButton loginSubmit"><span class='centerImg'>
-        <img src='img/application_go.png' alt="Login" /></span> Login</button>
-    </div>
   </div>
  </div>
 <div class="push"></div>
 </div>
 
 <?php require_once 'footer.php'; ?>
-

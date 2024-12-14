@@ -219,6 +219,82 @@ h2:after {
     margin-right: auto;
 }
 
+.loginDiv {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.loginDiv h3.blue {
+    text-align: center;
+    color: #5f87ae;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.loginDiv table.login {
+    width: 100%;
+}
+
+.loginDiv table.login td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.loginDiv .lnField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.loginDiv .lnField:focus {
+    border-color: #5f87ae;
+    box-shadow: 0 0 5px rgba(95,135,174,0.3);
+    outline: none;
+}
+
+.loginDiv .warning {
+    color: #ff4444;
+    font-size: 12px;
+    display: none;
+    padding-left: 10px;
+}
+
+.loginDiv .loginSubmit {
+    background: #5f87ae;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.loginDiv .loginSubmit:hover {
+    background: #4a6d8c;
+}
+
+.loginDiv .response {
+    color: #ff4444;
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+}
+
+.BadLogin {
+    border-color: #ff4444 !important;
+    background-color: #fff8f8;
+}
+
 /* Input fields */
 .lnField {
     width: 100px;
