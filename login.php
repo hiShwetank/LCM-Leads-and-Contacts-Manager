@@ -78,7 +78,7 @@ function login() {
 </script>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper login-page-wrapper">
  <?php require_once 'topBanner.php'; ?>
  <div class="outer">
   <div class='loginDiv'>
@@ -102,7 +102,7 @@ function login() {
       </tr>
       <tr>
         <td colspan="2">
-          <button class="loginSubmit">Login</button>
+          <button class="indian-login-btn loginSubmit">Login</button>
           <div class="response"></div>
         </td>
       </tr>
