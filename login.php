@@ -78,39 +78,40 @@ function login() {
 </script>
 </head>
 <body>
-<div class="wrapper login-page-wrapper">
- <div class="topBanner">
-    <div class="logo">
-        <img class="logo" src="img/lcm.png" alt="LCM - Leads and Contacts Manager"/>
-    </div>
- </div>
+<div class="wrapper">
+ <?php require_once 'topBanner.php'; ?>
  <div class="outer">
   <div class='loginDiv'>
-    <h3 class="blue">Welcome To LCM</h3>
+    <h3 class="blue"><u>Welcome To LCM, please login.</u></h3>
     <table class='login'>
       <tr>
         <td>
-          <input type="text" class="username lnField" placeholder="Username" />
+          User Name:
+        </td>
+        <td>
+          <input type="text" class="username lnField" />
         </td>
         <td class="warning">
-          Please enter your username
+          Enter your User Name.
         </td>
       </tr>
       <tr>
         <td>
-          <input type="password" class="password lnField" placeholder="Password" />
+          Password:
+        </td>
+        <td>
+          <input type="password" class="password lnField" />
         </td>
         <td class="warning">
-          Please enter your password
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <button class="indian-login-btn loginSubmit">Login</button>
-          <div class="response"></div>
+          Enter your password.
         </td>
       </tr>
     </table>
+    <div class='buttonRow'>
+      <span class="response"></span>
+      <button class="buttons blueButton loginSubmit"><span class='centerImg'>
+        <img src='img/application_go.png' alt="Login" /></span> Login</button>
+    </div>
   </div>
  </div>
 <div class="push"></div>
