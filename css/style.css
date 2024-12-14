@@ -209,19 +209,40 @@ h2:after {
 }
 
 .loginDiv {
-    background: #ffffff;
+    margin-top: 50px;
+    width: 320px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    padding: 10px;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginDiv {
+    background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(19,136,8,0.1));
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     max-width: 400px;
     margin: 50px auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255,153,51,0.3);
+    backdrop-filter: blur(10px);
 }
 
 .loginDiv h3.blue {
     text-align: center;
-    color: #5f87ae;
+    color: #000080;
     margin-bottom: 25px;
     font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FF9933, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
 }
 
 .loginDiv table.login {
@@ -235,16 +256,17 @@ h2:after {
 
 .loginDiv .lnField {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    border: 2px solid rgba(255,153,51,0.3);
     border-radius: 4px;
     font-size: 14px;
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .loginDiv .lnField:focus {
-    border-color: #5f87ae;
-    box-shadow: 0 0 5px rgba(95,135,174,0.3);
+    border-color: #138808;
+    box-shadow: 0 0 5px rgba(19,136,8,0.3);
     outline: none;
 }
 
@@ -255,21 +277,32 @@ h2:after {
     padding-left: 10px;
 }
 
-.loginDiv .loginSubmit {
-    background: #5f87ae;
+.indian-login-btn {
+    background: linear-gradient(45deg, #FF9933, #138808);
     color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
     width: 100%;
     margin-top: 15px;
+    position: relative;
+    overflow: hidden;
 }
 
-.loginDiv .loginSubmit:hover {
-    background: #4a6d8c;
+.indian-login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #138808, #FF9933);
+}
+
+.indian-login-btn:active {
+    transform: translateY(0);
 }
 
 .loginDiv .response {
@@ -277,6 +310,9 @@ h2:after {
     text-align: center;
     margin-top: 15px;
     display: none;
+    background: rgba(255,255,255,0.9);
+    padding: 8px;
+    border-radius: 4px;
 }
 
 .BadLogin {
@@ -765,6 +801,107 @@ span.fieldNameC {
 /***************** End Statistics Page ***********************/
 
 /***************** Login Page Styles ***********************/
+
+.loginDiv {
+    background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(19,136,8,0.1));
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255,153,51,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.loginDiv h3.blue {
+    text-align: center;
+    color: #000080;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FF9933, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+}
+
+.loginDiv table.login {
+    width: 100%;
+}
+
+.loginDiv table.login td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.loginDiv .lnField {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255,153,51,0.3);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.loginDiv .lnField:focus {
+    border-color: #138808;
+    box-shadow: 0 0 5px rgba(19,136,8,0.3);
+    outline: none;
+}
+
+.loginDiv .warning {
+    color: #ff4444;
+    font-size: 12px;
+    display: none;
+    padding-left: 10px;
+}
+
+.indian-login-btn {
+    background: linear-gradient(45deg, #FF9933, #138808);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.indian-login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #138808, #FF9933);
+}
+
+.indian-login-btn:active {
+    transform: translateY(0);
+}
+
+.loginDiv .response {
+    color: #ff4444;
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+    background: rgba(255,255,255,0.9);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.BadLogin {
+    border-color: #ff4444 !important;
+    background-color: #fff8f8;
+}
 
 .login-page-wrapper {
     background: linear-gradient(135deg, 
