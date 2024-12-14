@@ -79,7 +79,6 @@ function login() {
 </head>
 <body>
 <div class="wrapper login-page-wrapper">
- <?php require_once 'topBanner.php'; ?>
  <div class="outer">
   <div class='loginDiv'>
     <h3 class="blue">Welcome To LCM</h3>
