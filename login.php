@@ -79,6 +79,11 @@ function login() {
 </head>
 <body>
 <div class="wrapper login-page-wrapper">
+ <div class="topBanner">
+    <div class="logo">
+        <img class="logo" src="img/lcm.png" alt="LCM - Leads and Contacts Manager"/>
+    </div>
+ </div>
  <div class="outer">
   <div class='loginDiv'>
     <h3 class="blue">Welcome To LCM</h3>
