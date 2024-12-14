@@ -36,8 +36,6 @@
         <li class="<?php echo ($currPage == 'index.php') ? 'active' : ''; ?>"><a href="index.php">
           <img src='img/group.png' alt="Leads & Contacts" /> Leads & Contacts</a>
         </li>
-        <?php } elseif ($currPage == 'login.php') { ?>
-          <li class="active"><a href="#">Please Login</a></li>
         <?php } elseif ($currPage == 'install.php') {?>
           <li class="active"><a href="#">Install LCM</a></li>
         <?php } ?>      

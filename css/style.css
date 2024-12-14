@@ -220,19 +220,29 @@ h2:after {
 }
 
 .loginDiv {
-    background: #ffffff;
+    background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(19,136,8,0.1));
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     max-width: 400px;
     margin: 50px auto;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255,153,51,0.3);
+    backdrop-filter: blur(10px);
 }
 
 .loginDiv h3.blue {
     text-align: center;
-    color: #5f87ae;
+    color: #000080;
     margin-bottom: 25px;
     font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #FF9933, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
 }
 
 .loginDiv table.login {
@@ -246,16 +256,17 @@ h2:after {
 
 .loginDiv .lnField {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 12px;
+    border: 2px solid rgba(255,153,51,0.3);
     border-radius: 4px;
     font-size: 14px;
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .loginDiv .lnField:focus {
-    border-color: #5f87ae;
-    box-shadow: 0 0 5px rgba(95,135,174,0.3);
+    border-color: #138808;
+    box-shadow: 0 0 5px rgba(19,136,8,0.3);
     outline: none;
 }
 
@@ -266,21 +277,32 @@ h2:after {
     padding-left: 10px;
 }
 
-.loginDiv .loginSubmit {
-    background: #5f87ae;
+.indian-login-btn {
+    background: linear-gradient(45deg, #FF9933, #138808);
     color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
     width: 100%;
     margin-top: 15px;
+    position: relative;
+    overflow: hidden;
 }
 
-.loginDiv .loginSubmit:hover {
-    background: #4a6d8c;
+.indian-login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #138808, #FF9933);
+}
+
+.indian-login-btn:active {
+    transform: translateY(0);
 }
 
 .loginDiv .response {
@@ -288,6 +310,9 @@ h2:after {
     text-align: center;
     margin-top: 15px;
     display: none;
+    background: rgba(255,255,255,0.9);
+    padding: 8px;
+    border-radius: 4px;
 }
 
 .BadLogin {
@@ -295,208 +320,16 @@ h2:after {
     background-color: #fff8f8;
 }
 
-/* Input fields */
-.lnField {
-    width: 100px;
-    padding:10px;
-    margin:5px 0 5px 0;
-    border: 1px solid #788fa2;
-    border-radius:5px;
-}
-
-.lnDesc {
-    width: 200px;
-    padding:10px;
-    margin:5px 0 5px 0;
-    border: 1px solid #788fa2;
-    border-radius:5px;
-}       
-
-.selectDrop {
-    width: 142px;
-}
-
-.warning {
-    display: none;
-    color: #5f87ae;
-    width: 70px;
-    white-space: nowrap;
-}
-.response {
-    color: red;
-    padding-right: 50px;
-}
-
-.centerImg {
-    vertical-align: middle;
-}
-
-.footer {
-    text-align:center;
-    font-size: 12px;
-    padding:15px;
-    background-color: #303842;
-    border-top: 1px solid #111;
-    clear: both;
-}
-
-.hidden {
-    display: none;
-}
-
-/** Leads table **/
-.statusSelect {
-    text-align: left;
-} 
-
-.statusSelect a {
-    color: #5f87ae;
-    text-shadow: 0px -1px 1px #000;
-}
-
-.statusSelect ul {
-    background-color: #303842;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: 1px solid #555;
-}
-
-.statusSelect li:hover a {
-    color: #fff;
-    background-color: #5f87ae;
-    box-shadow: 2px 0px 16px rgba(0,0,0,0.7) inset;
-}
-
-.statusSelect .selected {
-    color: #fff;
-    box-shadow: 2px 0px 16px rgba(0,0,0,0.7) inset;
-}
-
-.statusSelect li a {
-    padding: 10px;
-    margin-right: -10px;
-    margin-left: -10px;
-}
- 
-.statusSelect li:first-child {
-    border: 0px;
-}
-
-/* Fix this for ipad/android links */
-.statusSelect li {
-    display:inline;
-    list-style-type:none;
-    border-left: 1px solid #555;
-    font-size: 16px;
-    margin: 0 0 0 -4px;
-    padding: 10px;
-    line-height: 39px;
-}
-
-.leadsMenu {
-    text-align: left;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.leadsTitle {
-    display: inline-block;
-}
-.addNewSpan {
-    margin-left: 30px;
-    display: inline-block;
-}
-.paginate {
-    margin-left: 30px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-.allLeadsHolder {
-    overflow: auto;
-}
-
-.allLeads {
-    margin-top: 5px;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.allLeads a {
-    color: #3e4750;
-}
-
-.allLeads td {
-    padding: 5px;
-    text-align: left;
-    border: 1px solid #bbb;
-}
-
-.allLeads th {
-    padding: 10px;
-    background-color: #3e4750;
-    border: 1px solid #333;
-}
-
-.searchLeads {
-    margin-left: 30px;
-    display: inline-block;
-}
-
-.topRow {
-}
-
-.viewLead {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.viewLead:hover {
-    color: #5f87ae;
-}
-
-.allLeads th a {
-    color: #fff;
-    text-shadow: 0px -1px 1px #000;
-}
-
-.allLeads th a:hover {
-    color: #ddd;
-}
-
-.allLeads th img {
-    vertical-align: middle;
-}
-
-tr.trClass0 td {
-    background-color: #e4efe1; 
-    color: #000000;
-}
-tr.trClass1 td {
-    background-color: #eff5f5; 
-    color: #000000;
-}
-/** End Leads table **/
-
-.leadField {
-    width: 100px;
-    white-space: nowrap;
-}
-
-.secCol {
-    white-space: nowrap;
-}
-
-table.contactInfo td {
-    padding: 2px;
-}
-
-table.leadAddress td {
-    padding: 2px;
-}
-
-table.leadCategory td {
-    padding: 2px;
+.login-page-wrapper {
+    background: linear-gradient(135deg, 
+        #FF9933 0%, 
+        rgba(255,255,255,0.9) 50%,
+        #138808 100%
+    );
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /***************** End General Styles *********************/
@@ -970,7 +803,7 @@ span.fieldNameC {
 /***************** Login Page Styles ***********************/
 
 .loginDiv {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(135deg, rgba(255,153,51,0.1), rgba(19,136,8,0.1));
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -978,32 +811,8 @@ span.fieldNameC {
     margin: 50px auto;
     position: relative;
     z-index: 2;
-}
-
-.login-page-wrapper {
-    background: linear-gradient(180deg, 
-        #FF9933 33.33%, /* Saffron */
-        #FFFFFF 33.33%, 66.66%, /* White */
-        #138808 66.66% /* Green */
-    );
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.login-page-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    background: #000080;
-    border-radius: 50%;
-    opacity: 0.1;
-    z-index: 1;
+    border: 1px solid rgba(255,153,51,0.3);
+    backdrop-filter: blur(10px);
 }
 
 .loginDiv h3.blue {
@@ -1013,6 +822,10 @@ span.fieldNameC {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    background: linear-gradient(45deg, #FF9933, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
 }
 
 .loginDiv table.login {
@@ -1027,7 +840,7 @@ span.fieldNameC {
 .loginDiv .lnField {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 2px solid rgba(255,153,51,0.3);
     border-radius: 4px;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -1047,7 +860,6 @@ span.fieldNameC {
     padding-left: 10px;
 }
 
-/* New Login Button Style */
 .indian-login-btn {
     background: linear-gradient(45deg, #FF9933, #138808);
     color: white;
@@ -1069,6 +881,7 @@ span.fieldNameC {
 .indian-login-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(45deg, #138808, #FF9933);
 }
 
 .indian-login-btn:active {
@@ -1088,6 +901,18 @@ span.fieldNameC {
 .BadLogin {
     border-color: #ff4444 !important;
     background-color: #fff8f8;
+}
+
+.login-page-wrapper {
+    background: linear-gradient(135deg, 
+        #FF9933 0%, 
+        rgba(255,255,255,0.9) 50%,
+        #138808 100%
+    );
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /***************** End Login Page Styles ***********************/
