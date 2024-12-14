@@ -327,8 +327,8 @@ h2:after {
     font-size: 12px;
     padding: 15px;
     background-color: #303842;  /* Dark background */
-    border-top: 1px solid #FF9933;  /* Saffron border */
-    color: #FF9933;  /* Saffron text */
+    border-top: 1px solid #FF7722;  /* Updated to match header */
+    color: #FF7722;  /* Updated to match header */
     text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
     clear: both;
 }
@@ -977,8 +977,8 @@ span.fieldNameC {
 /***************** End Login Page Styles ***********************/
 
 .topBanner {
-    background: #FF9933;  /* Saffron color */
-    border-bottom: 1px solid #e88822;
+    background: #FF7722;  /* Bhagwa/Gerua color */
+    border-bottom: 1px solid #e65d00;
     padding: 10px 20px;
     height: 70px;
     position: relative;
@@ -996,9 +996,9 @@ span.fieldNameC {
 }
 
 .topMenu ul li:hover {
-    background-color: #e88822;
+    background-color: #e65d00;
 }
 
 .topMenu ul li.active {
-    background-color: #e88822;
+    background-color: #e65d00;
 }
