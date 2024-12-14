@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    background-color: #303842;  /* Dark background */
+    color: #FF9933;  /* Saffron text */
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    clear: both;
+}
+
+.footer a {
+    color: #FF9933;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
