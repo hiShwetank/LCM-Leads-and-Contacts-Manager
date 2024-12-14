@@ -124,8 +124,9 @@ h2:after {
 }
 
 .logo {
-    float: left;
-    margin-top: 5px;
+    position: absolute;
+    top: 2px;
+    left: 10px;
 }
 
 .logo img {
@@ -134,15 +135,12 @@ h2:after {
 }
 
 .topBanner {
-    background: linear-gradient(to right, #e65d00, #FF7722, #ff944d);  /* Dark to light bhagwa gradient */
-    border-bottom: 1px solid #e65d00;
+    background: #FF9933;  /* Saffron color */
+    border-bottom: 1px solid #e88822;
     padding: 10px 20px;
     height: 70px;
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .topList {
@@ -991,18 +989,6 @@ span.fieldNameC {
 }
 
 /***************** End Login Page Styles ***********************/
-
-.topBanner {
-    background: linear-gradient(to right, #e65d00, #FF7722, #ff944d);  /* Dark to light bhagwa gradient */
-    border-bottom: 1px solid #e65d00;
-    padding: 10px 20px;
-    height: 70px;
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .topMenu {
     float: right;
